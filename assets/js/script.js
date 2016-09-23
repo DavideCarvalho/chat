@@ -44,7 +44,7 @@ function keyUpChat(obj, event) {
 		var hr = dt.getHours()+':'+dt.getMinutes();
 		var nome = $('.inputarea').attr('data-nome');
 
-		$('.chatarea').append('<div class="msgitem">'+hr+' <strong>'+nome+'</strong>: '+msg);
+		//$('.chatarea').append('<div class="msgitem">'+hr+' <strong>'+nome+'</strong>: '+msg);
 
 		$.ajax({
 			url:'/chat/ajax/sendmessage',
